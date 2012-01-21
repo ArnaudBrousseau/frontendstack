@@ -1,6 +1,16 @@
 <?php
 	include('backend/Mustache.php');
-
+	
+  	/*
+  	 * Add this line to your htaccess for development:
+  	 * SetEnv APP_ENV dev
+  	 * 
+  	 * Quick and dirty PHP alternative:
+  	 * putenv('APP_ENV=dev');
+  	 */
+	
+	putenv('APP_ENV=dev');
+	
 	$users = array(
 				array('name' => 'Barney', 'from' => 'PHP'),
 				array('name' => 'Cartman', 'from' => 'PHP'));
@@ -89,11 +99,17 @@
 	</div>
 
 
-<script id="userTemplate" type="text/html">
-	<?php echo $userTemplate; ?>
-</script>
+	<script id="userTemplate" type="text/html">
+		<?php echo $userTemplate; ?>
+	</script>
 
-<script data-main="js/main" src="js/libs/require.js"></script>
+
+<?php
+	if (getenv('APP_ENV') == 'dev')
+		echo '<script data-main="js/main" src="js/libs/require.js"></script>';
+	else 
+		echo '<script src="js/compiled.js"></script>';	
+?>
 
 </body>
 </html>

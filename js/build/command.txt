@@ -1,0 +1,1 @@
+java -classpath build/js.jar org.mozilla.javascript.tools.shell.Main build/r.js -o baseUrl=. name=build/almond.js include=main out=compiled.js wrap=true

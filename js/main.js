@@ -1,9 +1,7 @@
 require(['libs/jquery-1.7.1.min',
          'libs/mustache',
-         'Ajax'],
+         'app/Ajax'],
          function($, M, Ajax){
 	
-	
 	Ajax.getUsers();
-
 });
