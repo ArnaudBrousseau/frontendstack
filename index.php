@@ -62,6 +62,7 @@
 					<ul id="users">
 						<?php echo $usersHTML; ?>
 					</ul>
+					<p id="loading">Loading AJAX data...</p>
 				</section>
 				<section>
 					<h2>article section h2</h2>
