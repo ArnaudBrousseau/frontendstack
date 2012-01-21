@@ -1,5 +1,5 @@
 .project
 .buildpath
 .settings
-css/
 js/compiled.js
+less/*.css

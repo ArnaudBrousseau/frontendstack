@@ -41,7 +41,7 @@
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="less/global.css">
 
 	<script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
